@@ -13,7 +13,7 @@ const APICall = async (dispatch: ActionsI | any): Promise<any> => {
       return response.json();
     })
     .then((data) => {
-      let { date, explanation, title, url } = data[0];
+      const { date, explanation, title, url } = data[0];
       dispatch({
         type: "SET_ITEM",
         payload: {

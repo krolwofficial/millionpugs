@@ -3,7 +3,7 @@ import { Switch, Route, withRouter } from "react-router";
 import Dashboard from "./components/Dashboard";
 import Favourites from "./components/Favourites";
 
-const Router: React.FC = (props: any) => {
+const Router: React.FC = () => {
   return (
     <>
       <Route
