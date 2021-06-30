@@ -2,7 +2,7 @@ import { ActionsI } from "../types";
 
 const APICall = async (dispatch: ActionsI | any): Promise<any> => {
   await fetch(
-    "https://api.nasa.gov/planetary/apod?api_key=6Thch6wnSK0ascaiPgdCRv4zOUR8OuLJjBcYLGIU&count=1",
+    `https://api.nasa.gov/planetary/apod?api_key=${process.env.REACT_APP_API_KEY}&count=1`,
     {
       method: "GET",
       headers: new Headers({ "Content-Type": "application/json" }),
